@@ -29,6 +29,8 @@ function ButtonTabs() {
                         iconName = focused ? 'home' : 'home-outline';
                     } else if (route.name === 'Historia') {
                         iconName = focused ? 'book' : 'book-outline';
+                    } else if (route.name === 'Album') {
+                        iconName = focused ? 'apps' : 'apps-outline';
                     }
                     return <Ionicons name={iconName} size={size} color={color} />;
                 },
