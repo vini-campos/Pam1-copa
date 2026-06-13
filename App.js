@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
 import Home from './components/Home';
 import Historia from './components/Historia';
+import Tela from './components/Album'
 
 const Tab = createBottomTabNavigator();
 
@@ -29,7 +30,6 @@ function ButtonTabs() {
                     } else if (route.name === 'Historia') {
                         iconName = focused ? 'book' : 'book-outline';
                     }
-
                     return <Ionicons name={iconName} size={size} color={color} />;
                 },
                 tabBarActiveTintColor: '#007AFF',
@@ -48,6 +48,11 @@ function ButtonTabs() {
                 name="Historia"
                 component={Historia}
                 options={{ title: 'História da copa' }}
+            />
+            <Tab.Screen
+                name="Álbum"
+                component={Tela}
+                options={{ title: 'Álbum da Copa' }}
             />
         </Tab.Navigator>
     );
