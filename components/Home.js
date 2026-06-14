@@ -9,7 +9,7 @@ function Home() {
 
     const grupos = ['A', 'B', 'C', 'D'];
 
-    const backGroundImg = require('../assets/lula_fundo.jpg');
+    const backGroundImg = require('../assets/copa_2026_fundo.webp');
 
     return (
         <ScrollView style={styles.scroll} contentContainerStyle={styles.scrollContent}>
