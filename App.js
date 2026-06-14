@@ -30,7 +30,7 @@ function ButtonTabs() {
                     } else if (route.name === 'Historia') {
                         iconName = focused ? 'book' : 'book-outline';
                     } else if (route.name === 'Album') {
-                        iconName = focused ? 'apps' : 'apps-outline';
+                        iconName = focused ? 'albums' : 'albums-outline';
                     }
                     return <Ionicons name={iconName} size={size} color={color} />;
                 },
@@ -52,7 +52,7 @@ function ButtonTabs() {
                 options={{ title: 'História da copa' }}
             />
             <Tab.Screen
-                name="Álbum"
+                name="Album"
                 component={Tela}
                 options={{ title: 'Álbum da Copa' }}
             />
