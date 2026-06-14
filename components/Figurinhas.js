@@ -6,39 +6,135 @@ const AZUL = '#002776';
 const jogadores = [
     {
         id: 1,
-        nome: 'Lamine Yamal',
-        pais: 'Espanha',
+        nome: 'Casemiro',
+        pais: 'Brasil',
         idade: 18,
         velocidade: 8,
         forca: 7,
         altura: 8,
         chute: 8,
         drible: 8,
-        foto: require('../assets/lamineYamal.png'),
+        foto: require('../assets/casemiro.jpeg'),
     },
     {
         id: 2,
-        nome: 'Lamine',
-        pais: 'Espanha',
-        idade: 18,
-        velocidade: 8,
-        forca: 7,
+        nome: 'Bruno Guimarães',
+        pais: 'Brasil',
+        idade: 27,
+        velocidade: 9,
+        forca: 8,
         altura: 8,
-        chute: 8,
+        chute: 9,
         drible: 8,
-        foto: require('../assets/lamineYamal.png'),
+        foto: require('../assets/brunoG.png'),
     },
     {
         id: 3,
-        nome: 'Lula',
-        pais: 'PT',
+        nome: 'Ibñez',
+        pais: 'Brasil',
         idade: 607,
         velocidade: 10,
         forca: 10,
         altura: -1,
         chute: 10,
         drible: 100,
-        foto: require('../assets/figLula.png'),
+        foto: require('../assets/ibanez.png'),
+    },
+    {
+        id: 4,
+        nome: 'Marquinhos',
+        pais: 'Brasil',
+        idade: 41,
+        velocidade: 8,
+        forca: 10,
+        altura: 8,
+        chute: 10,
+        drible: 7,
+        foto: require('../assets/marquinhos.png'),
+    },
+    {
+        id: 5,
+        nome: 'Raphinha',
+        pais: 'Brasil',
+        idade: 37,
+        velocidade: 8,
+        forca: 8,
+        altura: 6,
+        chute: 9,
+        drible: 9,
+        foto: require('../assets/raphinha.png'),
+    },
+    {
+        id: 6,
+        nome: 'Vinicius Júnior',
+        pais: 'Brasil',
+        idade: 37,
+        velocidade: 8,
+        forca: 8,
+        altura: 6,
+        chute: 9,
+        drible: 9,
+        foto: require('../assets/vinijr.png'),
+    },
+    {
+        id: 7,
+        nome: 'Endrick',
+        pais: 'Brasil',
+        idade: 37,
+        velocidade: 8,
+        forca: 8,
+        altura: 6,
+        chute: 9,
+        drible: 9,
+        foto: require('../assets/ednrick.png'),
+    },
+    {
+        id: 8,
+        nome: 'Alisson',
+        pais: 'Brasil',
+        idade: 37,
+        velocidade: 8,
+        forca: 8,
+        altura: 6,
+        chute: 9,
+        drible: 9,
+        foto: require('../assets/alisson.png'),
+    },
+    {
+        id: 9,
+        nome: 'Lucas Paquetá',
+        pais: 'Brasil',
+        idade: 37,
+        velocidade: 8,
+        forca: 8,
+        altura: 6,
+        chute: 9,
+        drible: 9,
+        foto: require('../assets/paqueta.png'),
+    },
+    {
+        id: 10,
+        nome: 'Gabriel Magalhães',
+        pais: 'Brasil',
+        idade: 37,
+        velocidade: 8,
+        forca: 8,
+        altura: 6,
+        chute: 9,
+        drible: 9,
+        foto: require('../assets/gabrielM.png'),
+    },
+    {
+        id: 11,
+        nome: 'Douglas Santos',
+        pais: 'Brasil',
+        idade: 37,
+        velocidade: 8,
+        forca: 8,
+        altura: 6,
+        chute: 9,
+        drible: 9,
+        foto: require('../assets/douglasS.png'),
     },
 ];
 
@@ -81,6 +177,95 @@ export default function Figurinhas() {
                     </View>
                 </View>
             </Pressable>
+
+            <Pressable onPress={() => { setJogadorSelecionado(jogadores[3]); setModalVisivel(true); }}>
+                <View style={styles.cardFig}>
+                    <Image source={jogadores[3].foto} style={styles.figFoto} />
+                    <View style={styles.figInfo}>
+                        <Text style={styles.figNome}>{jogadores[3].nome}</Text>
+                        <Text style={styles.figPais}>{jogadores[3].pais} · {jogadores[3].idade} anos</Text>
+                        <Text style={styles.figDica}>Toque para ver mais</Text>
+                    </View>
+                </View>
+            </Pressable>
+
+            <Pressable onPress={() => { setJogadorSelecionado(jogadores[4]); setModalVisivel(true); }}>
+                <View style={styles.cardFig}>
+                    <Image source={jogadores[4].foto} style={styles.figFoto} />
+                    <View style={styles.figInfo}>
+                        <Text style={styles.figNome}>{jogadores[4].nome}</Text>
+                        <Text style={styles.figPais}>{jogadores[4].pais} · {jogadores[4].idade} anos</Text>
+                        <Text style={styles.figDica}>Toque para ver mais</Text>
+                    </View>
+                </View>
+            </Pressable>
+            
+            <Pressable onPress={() => { setJogadorSelecionado(jogadores[5]); setModalVisivel(true); }}>
+                <View style={styles.cardFig}>
+                    <Image source={jogadores[5].foto} style={styles.figFoto} />
+                    <View style={styles.figInfo}>
+                        <Text style={styles.figNome}>{jogadores[5].nome}</Text>
+                        <Text style={styles.figPais}>{jogadores[5].pais} · {jogadores[5].idade} anos</Text>
+                        <Text style={styles.figDica}>Toque para ver mais</Text>
+                    </View>
+                </View>
+            </Pressable>
+            
+            <Pressable onPress={() => { setJogadorSelecionado(jogadores[6]); setModalVisivel(true); }}>
+                <View style={styles.cardFig}>
+                    <Image source={jogadores[6].foto} style={styles.figFoto} />
+                    <View style={styles.figInfo}>
+                        <Text style={styles.figNome}>{jogadores[6].nome}</Text>
+                        <Text style={styles.figPais}>{jogadores[6].pais} · {jogadores[6].idade} anos</Text>
+                        <Text style={styles.figDica}>Toque para ver mais</Text>
+                    </View>
+                </View>
+            </Pressable>
+            
+            <Pressable onPress={() => { setJogadorSelecionado(jogadores[7]); setModalVisivel(true); }}>
+                <View style={styles.cardFig}>
+                    <Image source={jogadores[7].foto} style={styles.figFoto} />
+                    <View style={styles.figInfo}>
+                        <Text style={styles.figNome}>{jogadores[7].nome}</Text>
+                        <Text style={styles.figPais}>{jogadores[7].pais} · {jogadores[7].idade} anos</Text>
+                        <Text style={styles.figDica}>Toque para ver mais</Text>
+                    </View>
+                </View>
+            </Pressable>
+            
+            <Pressable onPress={() => { setJogadorSelecionado(jogadores[8]); setModalVisivel(true); }}>
+                <View style={styles.cardFig}>
+                    <Image source={jogadores[8].foto} style={styles.figFoto} />
+                    <View style={styles.figInfo}>
+                        <Text style={styles.figNome}>{jogadores[8].nome}</Text>
+                        <Text style={styles.figPais}>{jogadores[8].pais} · {jogadores[8].idade} anos</Text>
+                        <Text style={styles.figDica}>Toque para ver mais</Text>
+                    </View>
+                </View>
+            </Pressable>
+            
+            <Pressable onPress={() => { setJogadorSelecionado(jogadores[9]); setModalVisivel(true); }}>
+                <View style={styles.cardFig}>
+                    <Image source={jogadores[9].foto} style={styles.figFoto} />
+                    <View style={styles.figInfo}>
+                        <Text style={styles.figNome}>{jogadores[9].nome}</Text>
+                        <Text style={styles.figPais}>{jogadores[9].pais} · {jogadores[9].idade} anos</Text>
+                        <Text style={styles.figDica}>Toque para ver mais</Text>
+                    </View>
+                </View>
+            </Pressable>
+            
+            <Pressable onPress={() => { setJogadorSelecionado(jogadores[10]); setModalVisivel(true); }}>
+                <View style={styles.cardFig}>
+                    <Image source={jogadores[10].foto} style={styles.figFoto} />
+                    <View style={styles.figInfo}>
+                        <Text style={styles.figNome}>{jogadores[10].nome}</Text>
+                        <Text style={styles.figPais}>{jogadores[10].pais} · {jogadores[10].idade} anos</Text>
+                        <Text style={styles.figDica}>Toque para ver mais</Text>
+                    </View>
+                </View>
+            </Pressable>
+            
 
             <Modal
                 animationType="fade"

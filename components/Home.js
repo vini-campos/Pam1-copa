@@ -52,7 +52,7 @@ function Home() {
                 </View>
                 <Text style={styles.matchStatus}>Ao vivo</Text>
             </TouchableOpacity>
-
+            {/*tem q trocar essas divs dps pra uma não clickável*/}
             <TouchableOpacity style={styles.matchCard}>
                 <View style={styles.matchRow}>
                     <Text style={styles.matchTeam}>Portugal</Text>
@@ -61,17 +61,6 @@ function Home() {
                 </View>
                 <Text style={styles.matchStatus}>18:00</Text>
             </TouchableOpacity>
-
-            <Text style={styles.sectionTitle}>Grupos</Text>
-            <View style={styles.gruposGrid}>
-                {grupos.map((g) => (
-                    <TouchableOpacity key={g} style={styles.grupoCard}>
-                        <Text style={styles.grupoLetra}>Grupo {g}</Text>
-                        <Text style={styles.grupoSub}>4 seleções</Text>
-                    </TouchableOpacity>
-                ))}
-            </View>
-
         </ScrollView>
     );
 }
