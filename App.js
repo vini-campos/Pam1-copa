@@ -5,7 +5,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
 import Home from './components/Home';
 import Historia from './components/Historia';
-import Tela from './components/Album'
+import Tela from './components/Album';
+import Contato from './components/Contato.js';
 
 const Tab = createBottomTabNavigator();
 
@@ -31,6 +32,8 @@ function ButtonTabs() {
                         iconName = focused ? 'book' : 'book-outline';
                     } else if (route.name === 'Album') {
                         iconName = focused ? 'albums' : 'albums-outline';
+                    } else if (route.name === 'Contato') {
+                        iconName = focused ? 'newspaper' : 'newspaper-outline';
                     }
                     return <Ionicons name={iconName} size={size} color={color} />;
                 },
@@ -55,6 +58,11 @@ function ButtonTabs() {
                 name="Album"
                 component={Tela}
                 options={{ title: 'Álbum da Copa' }}
+            />
+            <Tab.Screen
+                name="Contato"
+                component={Contato}
+                options={{ title: 'Formulário de contato' }}
             />
         </Tab.Navigator>
     );
