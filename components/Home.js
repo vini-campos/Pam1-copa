@@ -27,8 +27,8 @@ function Home() {
                 <Text style={styles.liveLabel}>AO VIVO</Text>
                 <View style={styles.liveMatch}>
                     <Text style={styles.liveTeam}>França</Text>
-                    <Text style={styles.liveScore}>1 — 1</Text>
-                    <Text style={styles.liveTeam}>Alemanha</Text>
+                    <Text style={styles.liveScore}>1 — 2</Text>
+                    <Text style={styles.liveTeam}>Cabo Verde</Text>
                 </View>
                 <Text style={styles.liveMinute}>72' · Grupo F</Text>
             </View>
@@ -38,8 +38,8 @@ function Home() {
             <TouchableOpacity style={styles.matchCard}>
                 <View style={styles.matchRow}>
                     <Text style={styles.matchTeam}>Brasil</Text>
-                    <Text style={styles.matchScore}>2 - 1</Text>
-                    <Text style={[styles.matchTeam, { textAlign: 'right' }]}>Argentina</Text>
+                    <Text style={styles.matchScore}>7 - 1</Text>
+                    <Text style={[styles.matchTeam, { textAlign: 'right' }]}>Alemanha</Text>
                 </View>
                 <Text style={styles.matchStatus}>Encerrado</Text>
             </TouchableOpacity>
@@ -47,8 +47,8 @@ function Home() {
             <TouchableOpacity style={styles.matchCard}>
                 <View style={styles.matchRow}>
                     <Text style={styles.matchTeam}>França</Text>
-                    <Text style={[styles.matchScore, styles.matchScoreLive]}>1 - 1</Text>
-                    <Text style={[styles.matchTeam, { textAlign: 'right' }]}>Alemanha</Text>
+                    <Text style={[styles.matchScore, styles.matchScoreLive]}>1 - 2</Text>
+                    <Text style={[styles.matchTeam, { textAlign: 'right' }]}>Cabo Verde</Text>
                 </View>
                 <Text style={styles.matchStatus}>Ao vivo</Text>
             </TouchableOpacity>
