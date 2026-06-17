@@ -9,133 +9,109 @@ const jogadores = [
         nome: 'Casemiro',
         pais: 'Brasil',
         idade: 34,
-        velocidade: 7,
+        velocidade: 6,
         forca: 9,
         altura: 8,
-        chute: 8,
+        chute: 7,
         drible: 6,
         foto: require('../assets/casemiro.jpeg'),
     },
     {
         id: 2,
-        nome: 'Bruno Guimarães',
+        nome: 'Roger Ibañez',
         pais: 'Brasil',
         idade: 27,
-        velocidade: 9,
+        velocidade: 8,
         forca: 8,
         altura: 8,
-        chute: 9,
-        drible: 8,
-        foto: require('../assets/brunoG.png'),
-    },
-    {
-        id: 3,
-        nome: 'Ibñez',
-        pais: 'Brasil',
-        idade: 607,
-        velocidade: 10,
-        forca: 10,
-        altura: -1,
-        chute: 10,
-        drible: 100,
+        chute: 5,
+        drible: 6,
         foto: require('../assets/ibanez.png'),
     },
     {
-        id: 4,
+        id: 3,
         nome: 'Marquinhos',
         pais: 'Brasil',
         idade: 32,
         velocidade: 7,
-        forca: 9,
+        forca: 8,
         altura: 8,
         chute: 6,
-        drible: 5,
+        drible: 6,
         foto: require('../assets/marquinhos.png'),
     },
     {
-        id: 5,
-        nome: 'Raphinha',
-        pais: 'Brasil',
-        idade: 29,
-        velocidade: 8,
-        forca: 8,
-        altura: 6,
-        chute: 9,
-        drible: 9,
-        foto: require('../assets/raphinha.png'),
-    },
-    {
-        id: 6,
+        id: 4,
         nome: 'Vinicius Júnior',
         pais: 'Brasil',
-        idade: 37,
-        velocidade: 8,
-        forca: 8,
-        altura: 6,
+        idade: 25,
+        velocidade: 10,
+        forca: 7,
+        altura: 7,
         chute: 9,
-        drible: 9,
+        drible: 10,
         foto: require('../assets/vinijr.png'),
     },
     {
-        id: 7,
+        id: 5,
         nome: 'Endrick',
         pais: 'Brasil',
-        idade: 37,
-        velocidade: 8,
+        idade: 19,
+        velocidade: 9,
         forca: 8,
-        altura: 6,
+        altura: 7,
         chute: 9,
-        drible: 9,
+        drible: 8,
         foto: require('../assets/ednrick.png'),
     },
     {
-        id: 8,
+        id: 6,
         nome: 'Alisson',
         pais: 'Brasil',
-        idade: 37,
-        velocidade: 8,
+        idade: 33,
+        velocidade: 6,
         forca: 8,
-        altura: 6,
-        chute: 9,
-        drible: 9,
+        altura: 9,
+        chute: 5,
+        drible: 5,
         foto: require('../assets/alisson.png'),
     },
     {
-        id: 9,
+        id: 7,
         nome: 'Lucas Paquetá',
         pais: 'Brasil',
-        idade: 37,
-        velocidade: 8,
-        forca: 8,
-        altura: 6,
-        chute: 9,
+        idade: 28,
+        velocidade: 7,
+        forca: 7,
+        altura: 8,
+        chute: 8,
         drible: 9,
         foto: require('../assets/paqueta.png'),
     },
     {
-        id: 10,
+        id: 8,
         nome: 'Gabriel Magalhães',
         pais: 'Brasil',
-        idade: 37,
-        velocidade: 8,
-        forca: 8,
-        altura: 6,
-        chute: 9,
-        drible: 9,
+        idade: 28,
+        velocidade: 7,
+        forca: 9,
+        altura: 9,
+        chute: 5,
+        drible: 5,
         foto: require('../assets/gabrielM.png'),
     },
     {
-        id: 11,
+        id: 9,
         nome: 'Douglas Santos',
         pais: 'Brasil',
-        idade: 37,
-        velocidade: 8,
-        forca: 8,
-        altura: 6,
-        chute: 9,
-        drible: 9,
+        idade: 32,
+        velocidade: 7,
+        forca: 7,
+        altura: 7,
+        chute: 7,
+        drible: 7,
         foto: require('../assets/douglasS.png'),
-    },
+    }
 ];
 
 export default function Figurinhas() {
@@ -242,29 +218,8 @@ export default function Figurinhas() {
                         <Text style={styles.figDica}>Toque para ver mais</Text>
                     </View>
                 </View>
-            </Pressable>
+            </Pressable>        
             
-            <Pressable onPress={() => { setJogadorSelecionado(jogadores[9]); setModalVisivel(true); }}>
-                <View style={styles.cardFig}>
-                    <Image source={jogadores[9].foto} style={styles.figFoto} />
-                    <View style={styles.figInfo}>
-                        <Text style={styles.figNome}>{jogadores[9].nome}</Text>
-                        <Text style={styles.figPais}>{jogadores[9].pais} · {jogadores[9].idade} anos</Text>
-                        <Text style={styles.figDica}>Toque para ver mais</Text>
-                    </View>
-                </View>
-            </Pressable>
-            
-            <Pressable onPress={() => { setJogadorSelecionado(jogadores[10]); setModalVisivel(true); }}>
-                <View style={styles.cardFig}>
-                    <Image source={jogadores[10].foto} style={styles.figFoto} />
-                    <View style={styles.figInfo}>
-                        <Text style={styles.figNome}>{jogadores[10].nome}</Text>
-                        <Text style={styles.figPais}>{jogadores[10].pais} · {jogadores[10].idade} anos</Text>
-                        <Text style={styles.figDica}>Toque para ver mais</Text>
-                    </View>
-                </View>
-            </Pressable>
             
 
             <Modal

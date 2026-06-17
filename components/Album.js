@@ -131,7 +131,7 @@ function Album({ navigation }) {
 
             <View style={styles.botaoContainer}>
                 <Pressable onPress={() => navigation.navigate('Figurinhas')} style={styles.botao}>
-                    <Text style={styles.botaoTexto}>Ver figurinhas da Copa 2026 ›</Text>
+                    <Text style={styles.botaoTexto}>Ver figurinhas do Brasil de 2026 ›</Text>
                 </Pressable>
             </View>
         </ScrollView>

@@ -6,7 +6,7 @@ import { Ionicons } from '@expo/vector-icons';
 import Home from './components/Home';
 import Historia from './components/Historia';
 import Tela from './components/Album';
-import Contato from './components/Contato.js';
+import Cadastro from './components/Contato.js';
 
 const Tab = createBottomTabNavigator();
 
@@ -32,7 +32,7 @@ function ButtonTabs() {
                         iconName = focused ? 'book' : 'book-outline';
                     } else if (route.name === 'Album') {
                         iconName = focused ? 'albums' : 'albums-outline';
-                    } else if (route.name === 'Contato') {
+                    } else if (route.name === 'Cadastro') {
                         iconName = focused ? 'newspaper' : 'newspaper-outline';
                     }
                     return <Ionicons name={iconName} size={size} color={color} />;
@@ -60,9 +60,9 @@ function ButtonTabs() {
                 options={{ title: 'Álbum da Copa' }}
             />
             <Tab.Screen
-                name="Contato"
-                component={Contato}
-                options={{ title: 'Formulário de contato' }}
+                name="Cadastro"
+                component={Cadastro}
+                options={{ title: 'Cadastro' }}
             />
         </Tab.Navigator>
     );
